@@ -58,6 +58,7 @@
         ```
         https://mailntustedutw-my.sharepoint.com/personal/b10815057_ms_ntust_edu_tw/Documents/TestDownloadFolder
         ```
+        > 因為有些資料夾名稱含有日文或其他中文字元，貼到終端機上可能導致亂碼，這時候就要先將資料夾名進行URL Encoding : [線上工具](https://onlineutf8tools.com/url-encode-utf8)        
     * 接下來詢問vendor，請選擇**other** (不要選上方的sharepoint)
     * User與Password、bearer_token都直接按Enter採用預設即可
     * 詢問`Edit advanced config?`時，請輸入`y`
