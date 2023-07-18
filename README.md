@@ -21,7 +21,7 @@
 ---
 
 ### 解法
-以前我曾經將別人的專案修改成一個Sharepoint的下載器(Windows) [(Link)](https://github.com/frakw/sharepoint_downloader)，但後來因為api有更新，所以這工具就不能使用了。
+以前我曾經將別人的專案修改成一個Sharepoint的下載器(Windows) [(Link)](https://github.com/frakw/sharepoint_downloader)，但後來因為api有更新，所以這工具就不能使用了。\
 目前最新發現的方法是使用[Rclone](https://rclone.org/)搭配其中的[Webdav](https://rclone.org/webdav/)來進行下載，以下進行教學示範:
 > 註:本教學以Windows系統為主，其他OS會略有不同，但都可以使用
 1. 安裝Rclone (一款實用的雲端管理工具)
