@@ -11,11 +11,11 @@
 * [Get Cookie.txt](https://chrome.google.com/webstore/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc)
 ## 中文版
 ### 起因
-一般來說，只要Sharepoint的資料夾含有數GB的大小，使用網頁版的下載鈕進行下載
-![](imgs/web_download.png)
-得到的zip檔要進行解壓縮都會出現錯誤，甚至載下來的大小根本就與資料夾大小不符
-![](imgs/zip_err.png)
-不管重載幾次都是同樣的結果，最終只能一個一個檔案慢慢下載，非常麻煩
+一般來說，只要Sharepoint的資料夾含有數GB的大小，使用網頁版的下載鈕進行下載\
+![](imgs/web_download.png)\
+得到的zip檔要進行解壓縮都會出現錯誤，甚至載下來的大小根本就與資料夾大小不符\
+![](imgs/zip_err.png)\
+不管重載幾次都是同樣的結果，最終只能一個一個檔案慢慢下載，非常麻煩\
 這問題真的是困擾了我好久，只能說在下載這方面，Google Drive真的是做得比Sharepoint好太多了==
 
 ---
