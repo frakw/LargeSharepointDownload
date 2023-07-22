@@ -6,8 +6,8 @@
 * Password : `pass`
 ## Use Tools
 * [Rclone](https://rclone.org/downloads/) (version larger than 1.56.0)
-    >you can use `rclone selfupdate` to upgrade to latest version
-    >`rclone --version` to check current version
+    > `rclone --version` to check current version \
+    > you can use `rclone selfupdate` to upgrade to latest version
 * [Get Cookie.txt](https://chrome.google.com/webstore/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc)
 ## 中文版
 ### 起因
@@ -25,19 +25,19 @@
 目前最新發現的方法是使用[Rclone](https://rclone.org/)搭配其中的[Webdav](https://rclone.org/webdav/)來進行下載，以下進行教學示範:
 > 註:本教學以Windows系統為主，其他OS會略有不同，但都可以使用
 1. 安裝Rclone (一款實用的雲端管理工具)
-    > 已經安裝過的人要確保rclone版本大於1.56.0 (`rclone --version`)
+    > 已經安裝過的人要確保rclone版本大於1.56.0 (`rclone --version`) \
     > 若版本過低，可以使用`rclone selfupdate`來自動升級成最新版
     * 進入[下載頁面](https://rclone.org/downloads/)，根據作業系統與架構選擇你要的壓縮包 (一般電腦選Intel/AMD - 64 Bit即可)，解壓縮到你想放的位置
     * 複製`rclone.exe`所在的路徑，以我的來說是`D:\apps\rclone-v1.55.1-windows-amd64\`
-    * 進入「進階系統設定」->「環境變數」->「系統變數」->「Path」->「編輯」
+    * 進入「進階系統設定」->「環境變數」->「系統變數」->「Path」->「編輯」\
     ![](imgs/set_rclone_path.png)
-    * 按下新增，並將rclone路徑貼上，如此一來，便能在電腦的任何位置存取到`rclone.exe`
+    * 按下新增，並將rclone路徑貼上，如此一來，便能在電腦的任何位置存取到`rclone.exe` \
     ![](imgs/add_rclone_path.png)
 2. 使用任何方式來獲取Sharepoint網站的Cookie，然後先複製存起來
     * 這裡推薦使用Chrome的外掛 : [Get Cookie.txt](https://chrome.google.com/webstore/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc)，當然你也可以用瀏覽器的F12去找到Cookie
         * 進入你要下載的Sharepoint的資料夾，若有密碼就輸入
         * 開啟外掛應該會出現下面的畫面，找到Name為`FedAuth`的那行，複製其Value，此即為Cookie
-    ![](imgs/get_cookie.png)
+        ![](imgs/get_cookie.png)
     * 可以使用我放的資料夾來測試
         * [Sharepoint Folder Link](https://mailntustedutw-my.sharepoint.com/:f:/g/personal/b10815057_ms_ntust_edu_tw/Es39WLciVAhBksY52KNsNAwBgf1_Cs4Br_YmVyejI_bWNQ?e=ZrdmF9)
         * Password : `pass`
@@ -51,7 +51,7 @@
         https://mailntustedutw-my.sharepoint.com/:f:/g/personal/b10815057_ms_ntust_edu_tw/Es39WLciVAhBksY52KNsNAwBgf1_Cs4Br_YmVyejI_bWNQ?e=ZrdmF9
         ```
         * 先把`:f:/g/`這段刪除
-        * 然後將Es39WLc...開頭的那串，替代成`Documents/"要下載的資料夾名(含路徑)"`
+        * 然後將Es39WLc...開頭的那串，替代成`Documents/"要下載的資料夾名(含路徑)"` \
         ![](imgs/folder_name.png)
 
         * 最終的網址為 : 
@@ -68,7 +68,7 @@
     Cookie,FedAuth=前面步驟複製的Cookie
     ```
     * 最終確認無誤後輸入`y`，即可創建remote
-    * 完成後可以輸入`rclone lsd: sharepoint_download:`，出現以下畫面就代表成功了
+    * 完成後可以輸入`rclone ls: sharepoint_download:`，出現以下畫面就代表成功了\
     ![](imgs/ls_test.png)
 4. 下載Sharepoint資料夾
     * 接著要下載就很簡單了，只要在終端機執行以下指令即可
