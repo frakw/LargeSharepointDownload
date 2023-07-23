@@ -68,7 +68,7 @@
     Cookie,FedAuth=前面步驟複製的Cookie
     ```
     * 最終確認無誤後輸入`y`，即可創建remote
-    * 完成後可以輸入`rclone ls: sharepoint_download:`，出現以下畫面就代表成功了\
+    * 完成後可以輸入`rclone ls sharepoint_download:`，出現以下畫面就代表成功了\
     ![](imgs/ls_test.png)
 4. 下載Sharepoint資料夾
     * 接著要下載就很簡單了，只要在終端機執行以下指令即可
